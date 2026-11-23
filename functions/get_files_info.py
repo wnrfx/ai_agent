@@ -23,10 +23,10 @@ def get_files_info(working_directory: str, directory: str = ".") -> str:
     working_directory_abs = os.path.abspath(working_directory)
     target_directory = os.path.normpath(os.path.join(working_directory_abs, directory)) 
 
-    if directory == ".":
-        print("Results for current directory")
-    else: 
-        print(f"Results for '{directory}' directory")
+    # if directory == ".":
+    #     print("Results for current directory")
+    # else: 
+    #     print(f"Results for '{directory}' directory")
 
 
     valid_target_directory = os.path.commonpath([working_directory_abs, target_directory]) == working_directory_abs 
